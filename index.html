@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+    -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sfcsfsiri.js"></script>
+    <script src="http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js"></script>
+
+  </head>
+  <body>
+    <img src="./img/sfsiri.png" width="100%" class="img-responsive" alt="Responsive image"></img>
+	<br>
+	<input type="text" id="login" class="form-control" placeholder="CNS Login">	
+	<input type="password" id="pw" class="form-control" placeholder="Password">	
+	<br>
+    <button type="button" id="zanryu" class="btn btn-primary btn-lg btn-block">残留届け</button>
+    <button type="button" id="report" class="btn btn-default btn-lg btn-block">課題</button>
+    <button type="button" id="pe" class="btn btn-primary btn-lg btn-block">体育予約</button>
+    <button type="button" id="classroom" class="btn btn-default btn-lg btn-block">教室情報</button>
+	<br>
+	<div class="siri">
+	  <form>
+	  	<button type="button" id="talk" onclick="recognition.start()">
+              <img id="mike-image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjOdro6PJOcO9uECB2hG5MEH0x7PNwt16nghocCKW3f55Nl-gC"></img>
+          </button>
+	  </form>
+      <div id="result_printarea">
+      </div>
+    </div>
+    <div id='audio-responce'>
+        <audio control></audio>
+    </div>
+  </body>
+</html>
+
